@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "/home/leo/.local/lib/python3.6/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/client.py", line 1093, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/client.py", line 560, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/client.py", line 854, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/home/leo/.local/lib/python3.6/site-packages/nbclient/client.py", line 756, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+for p in lista_p: 
+  lista_phi2 = calcularPhi(R,T,p,lista_x1,B22,Delta12)
+  plt.plot(lista_x2,lista_phi2,label=p)
+plt.label('x2')
+plt.ylabel('phi2')
+plt.title('O2')
+plt.legend()
+plt.show()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAttributeError[0m                            Traceback (most recent call last)
+[0;32m<ipython-input-20-26aa76df7d7e>[0m in [0;36m<module>[0;34m[0m
+[1;32m      2[0m   [0mlista_phi2[0m [0;34m=[0m [0mcalcularPhi[0m[0;34m([0m[0mR[0m[0;34m,[0m[0mT[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mlista_x1[0m[0;34m,[0m[0mB22[0m[0;34m,[0m[0mDelta12[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m   [0mplt[0m[0;34m.[0m[0mplot[0m[0;34m([0m[0mlista_x2[0m[0;34m,[0m[0mlista_phi2[0m[0;34m,[0m[0mlabel[0m[0;34m=[0m[0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 4[0;31m [0mplt[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0;34m'x2'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      5[0m [0mplt[0m[0;34m.[0m[0mylabel[0m[0;34m([0m[0;34m'phi2'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      6[0m [0mplt[0m[0;34m.[0m[0mtitle[0m[0;34m([0m[0;34m'O2'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mAttributeError[0m: module 'matplotlib.pyplot' has no attribute 'label'
+AttributeError: module 'matplotlib.pyplot' has no attribute 'label'
+
