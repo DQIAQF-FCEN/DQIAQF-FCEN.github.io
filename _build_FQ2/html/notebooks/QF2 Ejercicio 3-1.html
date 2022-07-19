@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; FQ2</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FQ2</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebooks/QF2 Ejercicio 3-1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks/QF2 Ejercicio 3-1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Abrir un problema"><i class="fas fa-lightbulb"></i>Tema abierto</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/notebooks/QF2 Ejercicio 3-1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1><no title></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importo numpy con el alias np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># importo pyplot de matplotlib con el alias plt</span>
+
+<span class="n">p_sl</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">329</span><span class="p">,</span><span class="mi">603</span><span class="p">,</span><span class="mi">873</span><span class="p">])</span> <span class="c1">#bar</span>
+<span class="n">T_sl</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span><span class="o">-</span><span class="mf">5.0</span><span class="p">,</span><span class="o">-</span><span class="mf">7.5</span><span class="p">])</span> <span class="c1">#ºC</span>
+<span class="n">p_sv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">165.29</span><span class="p">,</span><span class="mf">259.94</span><span class="p">,</span><span class="mf">401.23</span><span class="p">,</span><span class="mf">603.85</span><span class="p">,</span><span class="mi">1132</span><span class="p">])</span> <span class="c1">#Pa</span>
+<span class="n">T_sv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">15.0</span><span class="p">,</span><span class="o">-</span><span class="mf">10.0</span><span class="p">,</span><span class="o">-</span><span class="mf">5.0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span> <span class="c1">#ºC</span>
+<span class="n">p_lv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0019</span><span class="p">,</span><span class="mf">0.0028</span><span class="p">,</span><span class="mf">0.006</span><span class="p">,</span><span class="mf">0.023</span><span class="p">,</span><span class="mf">0.072</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.47</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.96</span><span class="p">,</span><span class="mf">3.57</span><span class="p">,</span><span class="mf">6.1</span><span class="p">,</span><span class="mf">15.3</span><span class="p">,</span><span class="mf">34.2</span><span class="p">,</span><span class="mf">84.8</span><span class="p">,</span><span class="mf">163.2</span><span class="p">,</span><span class="mf">207.5</span><span class="p">,</span><span class="mi">218</span><span class="p">])</span> <span class="c1">#bar</span>
+<span class="n">T_lv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">140</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">250</span><span class="p">,</span><span class="mi">300</span><span class="p">,</span><span class="mi">350</span><span class="p">,</span><span class="mi">370</span><span class="p">,</span><span class="mi">374</span><span class="p">])</span> <span class="c1">#ºC</span>
+<span class="c1">#Ahora hay que pasar todo a K y bar</span>
+<span class="n">T_sl</span> <span class="o">=</span> <span class="n">T_sl</span> <span class="o">+</span> <span class="mf">273.15</span> 
+<span class="n">T_sv</span> <span class="o">=</span> <span class="n">T_sv</span> <span class="o">+</span> <span class="mf">273.15</span>
+<span class="n">T_lv</span> <span class="o">=</span> <span class="n">T_lv</span> <span class="o">+</span> <span class="mf">273.15</span>
+<span class="n">p_sv</span> <span class="o">=</span> <span class="n">p_sv</span><span class="o">*</span><span class="mf">1e-5</span>
+<span class="c1">#Hagamos el grafico....</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T_sl</span><span class="p">,</span> <span class="n">p_sl</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;s-l&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T_sv</span><span class="p">,</span><span class="n">p_sv</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;s-v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T_lv</span><span class="p">,</span> <span class="n">p_lv</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;l-v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span> <span class="c1"># Rótulo de eje horizontal</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Presión (bar)&#39;</span><span class="p">)</span> <span class="c1">#Rótulo de eje vertical</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> <span class="c1">#Para mostrar la leyenda de cada línea graficada</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1">#Para mostrar graficar la figura en pantalla</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 1 Axes&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tiene el diagrama de fase del agua la forma esperada?
+Busque uno genércio para comparar…</p>
+<p>Grafique ln(p) vs. 1/T  y p vs. T para la sublimación,  fusión y evaporización.</p>
+<p>¿Qué tipo de comportamiento espera en cada figura? Justifique.</p>
+<p>Aclaración sobre el armado de figuras:
+Utilizar la función <strong>subplots</strong> de pyplot para definir los <strong>objetos</strong> “figura” y “ejes” asociados a nuestro plot. Llamaremos a estos “fig” y “ax”, respectivamente.
+Cosas sobre este punto:</p>
+<ul class="simple">
+<li><p>Aunque querramos generar un único gráfico, usamos una función que se llama subplots. Como es un único gráfico, la invocamos sin argumentos, como plt.subplots() (notar el paréntesis vacío).- Aunque querramos generar un único gráfico (y de hecho solo queremos graficar un set de datos), graficar con matplotlib requiere definir dos cosas: una “figura” y un “eje”. En otras palabras, la función subplots genera como resultado una tupla (un par ordenado “(a,b)”) cuyo primer elemento es un objeto del tipo figura, y el segundo es uno del tipo eje (el significado de objeto en este contexto es más profundo de lo que podemos trabajar aquí, pero vayamos acostumbrándonos a la jerga).</p></li>
+</ul>
+<p>Los datos a graficar propiamente dichos, se “agregan” al eje (que definimos como “ax”), con la función <strong>plot</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="p">(</span><span class="n">T_sv</span><span class="p">,</span> <span class="n">T_sl</span><span class="p">,</span> <span class="n">T_lv</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_sv</span><span class="p">,</span><span class="n">p_sl</span><span class="p">,</span><span class="n">p_lv</span><span class="p">)</span>
+<span class="n">tx</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39; eq sv&#39;</span><span class="p">,</span> <span class="s1">&#39;eq sl&#39;</span><span class="p">,</span> <span class="s1">&#39;eq lv&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="s1">&#39;-bD&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;1/T (1/K)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;ln(P)&#39;</span><span class="p">)</span> <span class="c1"># Rótulo de ejes</span>
+  <span class="c1">#  plt.show() #Para mostrar graficar la figura en pantalla</span>
+
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;-gD&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;T (K)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;P (bar)&#39;</span><span class="p">)</span> <span class="c1"># Rótulo de ejes</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">rect</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">])</span>
+    <span class="c1">#fig.tight_layout()</span>
+   <span class="c1"># plt.legend() #Para mostrar la leyenda de cada línea graficada</span>
+ <span class="c1">#   plt.show() #Para mostrar graficar la figura en pantalla</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/QF2 Ejercicio 3-1_4_0.png" src="../_images/QF2 Ejercicio 3-1_4_0.png" />
+<img alt="../_images/QF2 Ejercicio 3-1_4_1.png" src="../_images/QF2 Ejercicio 3-1_4_1.png" />
+<img alt="../_images/QF2 Ejercicio 3-1_4_2.png" src="../_images/QF2 Ejercicio 3-1_4_2.png" />
+</div>
+</div>
+<p>Obtenga los valores de  <span class="math notranslate nohighlight">\(\Delta_{vap}H\)</span>, <span class="math notranslate nohighlight">\(\Delta_{sub}\)</span> y <span class="math notranslate nohighlight">\(\Delta_{fus}\)</span>?
+¿A partir de que figuras se puede obtener dichos valores?</p>
+<p>Cacule la regresión lineal de los gráficos obtenidos previamente. ¿Cuáles son lineales? ¿Qué implica la pendiente en dichos casos?</p>
+<p>Hay muchas opciones para realizar una regresión lineal…vamos a usar una función que después nos va a servir para la práctica de glutation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">curve_fit</span> <span class="c1">#para hacer ajustes</span>
+<span class="c1">#https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">r2_score</span> <span class="c1">#para computarle el R2 a los ajustes </span>
+
+<span class="k">def</span> <span class="nf">reglineal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>  <span class="c1">#defino una función para la regresión lineal</span>
+  <span class="n">yfit</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">a</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="n">b</span>
+    <span class="n">yfit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">yfit</span>
+
+
+<span class="n">aln</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">bln</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">a</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">b</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+ <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+ <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="c1">##Para ln P vs 1/T</span>
+ <span class="n">val</span><span class="p">,</span><span class="n">pcv</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">reglineal</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>   <span class="c1">#la función curvefit devuelve dos cosas: una lista de parámetros y una de covarianzas</span>
+ <span class="n">aln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+ <span class="n">bln</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+ <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="s1">&#39;-bD&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+ <span class="n">y</span><span class="o">=</span><span class="n">reglineal</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">aln</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">bln</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1">#calculo la funcion fiteada</span>
+ <span class="n">R2ln</span><span class="o">=</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">y</span><span class="p">))</span> <span class="c1"># calculo el R2  de la regresion</span>
+ <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;-r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;fit&#39;</span><span class="p">)</span>
+ <span class="n">ax1</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;1/T (1/K)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;ln(P)&#39;</span><span class="p">)</span> 
+
+ <span class="c1">#Para p vs T</span>
+ <span class="n">val</span><span class="p">,</span><span class="n">pcv</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">reglineal</span><span class="p">,</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> 
+ <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+ <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> 
+ <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;-bD&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+ <span class="n">y</span><span class="o">=</span><span class="n">reglineal</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>   <span class="c1">#calculo la funcion fiteada</span>
+ <span class="n">R2</span><span class="o">=</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="p">))</span> <span class="c1"># calculo el R2  de la regresion</span>
+ <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;-r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;fit&#39;</span><span class="p">)</span>
+ <span class="n">ax2</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;T (K)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;P (bar)&#39;</span><span class="p">)</span> <span class="c1"># Rótulo de ejes</span>
+ <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">rect</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">])</span>
+ <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+ <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R2 del ajuste ln(P) vs 1/T:&quot;</span><span class="p">,</span> <span class="n">R2ln</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R2 del ajuste P vs T:&quot;</span><span class="p">,</span> <span class="n">R2</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El delta H si vale  Clausis Clapeyron:&#39;</span><span class="p">,</span><span class="o">-</span><span class="n">aln</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="mf">8.314</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="s1">&#39;kJ/mol&#39;</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/QF2 Ejercicio 3-1_6_0.png" src="../_images/QF2 Ejercicio 3-1_6_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R2 del ajuste ln(P) vs 1/T: 0.9964943076286726
+R2 del ajuste P vs T: 0.9629260235257748
+El delta H si vale  Clausis Clapeyron: 46.995992467478814 kJ/mol
+</pre></div>
+</div>
+<img alt="../_images/QF2 Ejercicio 3-1_6_2.png" src="../_images/QF2 Ejercicio 3-1_6_2.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R2 del ajuste ln(P) vs 1/T: 0.7112607597002503
+R2 del ajuste P vs T: 0.9976921478076599
+El delta H si vale  Clausis Clapeyron: -502.41732026711884 kJ/mol
+</pre></div>
+</div>
+<img alt="../_images/QF2 Ejercicio 3-1_6_4.png" src="../_images/QF2 Ejercicio 3-1_6_4.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R2 del ajuste ln(P) vs 1/T: 0.9990217091368134
+R2 del ajuste P vs T: 0.7530638010463495
+El delta H si vale  Clausis Clapeyron: 41.319610907813455 kJ/mol
+</pre></div>
+</div>
+</div>
+</div>
+<p>Los tres dH obtenidos tienen significado físico?</p>
+<p>En caso de que no sea asi…como lo obtendría? ¿Por que falla Clausis Clapeyron?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Datos que puede ser utilies...Pendiente de P vs T</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pendiente de p vs T&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">tx</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;bar/K&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pendiente de p vs T
+ eq sv 0.00039146864905260025 bar/K
+eq sl -115.6000008109877 bar/K
+eq lv 0.4901851436402361 bar/K
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Más datos…</strong></p>
+<p><span class="math notranslate nohighlight">\(\rho_{hielo}\)</span>= 0.92 <span class="math notranslate nohighlight">\(g.cm^{-3}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\rho_{liq}\)</span>= 1 <span class="math notranslate nohighlight">\(g.cm^{-3}\)</span></p>
+<p><span class="math notranslate nohighlight">\(p_c\)</span> = 218 bar</p>
+<p><span class="math notranslate nohighlight">\(T_c\)</span> = 374 ºC</p>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por Proyecto UBACyT<br/>
+    
+        &copy; Derechos de autor 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
